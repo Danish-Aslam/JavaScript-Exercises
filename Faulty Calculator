@@ -1,0 +1,20 @@
+let a = Math.random();
+let num_1 = parseInt(prompt("Enter first number:"));
+let operator = prompt("Input Operator (+,-,*,/): ");
+let num_2 = parseInt(prompt("Enter second number:"));
+
+if (a > 0.1 && operator == "+") {
+    console.log(num_1 - num_2);
+} else if (a > 0.1 && operator == "-") {
+    console.log(num_1 + num_2);
+} else if (a > 0.1 && operator == "*") {
+    console.log(num_1 / num_2);
+} else if (a > 0.1 && operator == "/") {
+    console.log(num_1 * num_2);
+} else {
+    if (operator == "+") console.log(num_1 + num_2);
+    else if (operator == "-") console.log(num_1 - num_2);
+    else if (operator == "*") console.log(num_1 * num_2);
+    else if (operator == "/") console.log(num_1 / num_2);
+    else console.log("Invalid operator");
+}
